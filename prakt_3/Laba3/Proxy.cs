@@ -10,9 +10,12 @@ namespace Laba3
     {
         NumPrinter p = null;
         int k;
+        int[] mass;
         public Proxy(int n)
         {
             k = n+1;
+            p = new NumPrinter(k);
+            mass = p.GetNumbers();
         }
         public int[] GetNumbers()
         {
@@ -23,13 +26,11 @@ namespace Laba3
             {
                 if (i % 2 == 1)
                 {
-                    mas[h] = i;
+                    mas[h] = mass[i];
                     h++;
                 }
             }
             return mas;
-            //foreach (int s in result)
-            //Console.WriteLine(s);
         }
     }
 }

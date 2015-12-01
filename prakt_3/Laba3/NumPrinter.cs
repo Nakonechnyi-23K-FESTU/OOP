@@ -20,7 +20,10 @@ namespace Laba3
             Console.WriteLine("Ждите, сейчас все будет.. Может быть..");
             Thread.Sleep(10000);
             for(int i = 0; i<n;i++)
-                imas[i]=i;
+            {
+                imas[i] = i;
+                Console.WriteLine(imas[i]);
+            }  
             Console.WriteLine("Я сделяль!");
             return imas;
         }
